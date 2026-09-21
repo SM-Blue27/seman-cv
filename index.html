@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CV - Muhammad Mufti</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #eaeaea;
+            color: #333;
+        }
+
+        .cv-container {
+            width: 850px;
+            max-width: 95%;
+            margin: 40px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 30px 25px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+        }
+
+        .profile h1 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .profile p {
+            margin-top: 5px;
+            color: #bfdbfe;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            margin: 25px 0 12px;
+            border-bottom: 2px solid #60a5fa;
+            padding-bottom: 5px;
+        }
+
+        .sidebar p,
+        .sidebar li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #172554;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .education,
+        .experience {
+            margin-bottom: 20px;
+        }
+
+        .education h3,
+        .experience h3 {
+            color: #1d4ed8;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #f3f4f6;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        .bar {
+            height: 8px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .project {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin-bottom: 12px;
+        }
+
+        .project h3 {
+            margin-bottom: 5px;
+        }
+
+        .contact p {
+            margin-bottom: 8px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+
+        /* PRINT */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .cv-container {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="profile">
+                <!-- Masukkan foto dengan nama foto.jpg -->
+                <img src="foto.jpeg" alt="Foto Muhammad Mufti">
+
+                <h1>Muhammad Mufti</h1>
+                <p>Siswa SMK - TKJ</p>
+            </div>
+
+            <h2>Kontak</h2>
+
+            <p>📧 muhammadmufti757@gmail.com</p>
+            <p>📱 082159887423</p>
+            <p>📍 PPU, Indonesia</p>
+
+            <h2>Data Diri</h2>
+
+            <ul>
+                <li>Tempat Lahir: Babulu Laut</li>
+                <li>Tanggal Lahir: 27 September 2008</li>
+                <li>Jenis Kelamin: Laki-laki</li>
+                <li>Kewarganegaraan: Indonesia</li>
+            </ul>
+
+            <h2>Bahasa</h2>
+
+            <ul>
+                <li>Bahasa Indonesia</li>
+                <li>Bahasa Inggris</li>
+            </ul>
+
+        </aside>
+
+
+        <!-- CONTENT -->
+        <main class="content">
+
+            <!-- TENTANG SAYA -->
+            <section class="section">
+
+                <h2>Tentang Saya</h2>
+
+                <p>
+                    Saya adalah siswa SMK Airlangga jurusan Teknik Komputer dan
+                    Jaringan (TKJ) yang memiliki ketertarikan pada teknologi,
+                    jaringan komputer, pemrograman, dan sistem komputer.
+                    Saya senang mempelajari hal-hal baru dan mampu bekerja
+                    secara individu maupun dalam tim.
+                </p>
+
+            </section>
+
+
+            <!-- PENDIDIKAN -->
+            <section class="section">
+
+                <h2>Pendidikan</h2>
+
+                <div class="education">
+
+                    <h3>SMK Airlangga</h3>
+
+                    <p class="date">
+                        2024 - 2027
+                    </p>
+
+                    <p>
+                        Jurusan Teknik Komputer dan Jaringan (TKJ)
+                    </p>
+
+                </div>
+
+                <div class="education">
+
+                    <h3>SMP Negeri 17 PPU</h3>
+
+                    <p class="date">
+                        2021 - 2024
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- KEAHLIAN -->
+            <section class="section">
+
+                <h2>Keahlian</h2>
+
+                <div class="skills">
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>HTML & CSS</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="progress" style="width:80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Jaringan Komputer</span>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="progress" style="width:85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Mikrotik</span>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="progress" style="width:75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Linux</span>
+                            <span>70%</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="progress" style="width:70%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PENGALAMAN -->
+            <section class="section">
+
+                <h2>Pengalaman</h2>
+
+                <div class="experience">
+
+                    <h3>Proyek Jaringan Komputer</h3>
+
+                    <p class="date">2025 - Sekarang</p>
+
+                    <p>
+                        Membuat dan melakukan konfigurasi jaringan LAN,
+                        IP Address, router, serta melakukan simulasi jaringan
+                        menggunakan Cisco Packet Tracer.
+                    </p>
+
+                </div>
+
+                <div class="experience">
+
+                    <h3>Organisasi Sekolah</h3>
+
+                    <p class="date">2024 - Sekarang</p>
+
+                    <p>
+                        Berpartisipasi dalam organisasi OSIS dan membantu
+                        pelaksanaan berbagai kegiatan sekolah.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECT -->
+            <section class="section">
+
+                <h2>Project</h2>
+
+                <div class="project">
+
+                    <h3>Website CV</h3>
+
+                    <p>
+                        Membuat website Curriculum Vitae menggunakan
+                        HTML dan CSS.
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>Simulasi Jaringan</h3>
+
+                    <p>
+                        Membuat simulasi jaringan komputer menggunakan
+                        Cisco Packet Tracer.
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>Konfigurasi Mikrotik</h3>
+
+                    <p>
+                        Melakukan konfigurasi dasar Mikrotik seperti
+                        IP Address, DHCP, NAT, dan routing.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- KONTAK -->
+            <section class="section contact">
+
+                <h2>Hubungi Saya</h2>
+
+                <p>📧 Email: muhammadmufti757@gmail.com</p>
+                <p>📱 WhatsApp: 082159887423</p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
